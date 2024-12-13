@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 93vh;
+}
+
+.About_Us {
+    min-width: 90%;
+    max-height: 700px;
+}
+
+.services .row > * {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row.my-5 {
+    display: flex;
+}
+
+.offer_style {
+    background: #3994d6;
+}
+
+.Juhuimg {
+    height: 20rem;
+}
+
+.footer {
+    background-color: #808080;
+    text-align: center;
+    margin-bottom: -3rem;
+}
+
+.footer2 {
+    background-color: #808080;
+    text-align: center;
+    margin-top: 13rem;
+}
+
+.card-img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.medium-img {
+    max-height: 500px; /* Adjusted height for medium size */
+    width: auto;
+    object-fit: cover; /* Ensures the image remains proportionate */
+}
+
+/* Responsive CSS Code */
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for xs since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .Juhuimg {
+        height: 15rem; /* Adjust image height for small devices */
+    }
+    .footer {
+        margin-bottom: -2rem; /* Adjust footer spacing */
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .carousel-item img {
+        height: 85vh; /* Adjust carousel height */
+    }
+    .footer2 {
+        margin-top: 10rem; /* Adjust footer spacing */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .offer_style {
+        background: #287bb5; /* Slightly darker blue for larger screens */
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .Juhuimg {
+        height: 25rem; /* Larger image height for extra-large screens */
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .carousel-item img {
+        height: 90vh; /* Restore full carousel height for very large screens */
+    }
+}
